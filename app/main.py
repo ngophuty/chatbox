@@ -1,5 +1,9 @@
-from fastapi import APIRouter
+from fastapi import FastAPI,APIRouter
 
 
 
-app = APIRouter()
+app = FastAPI()
+
+@app.get('/',tags= ['hello world'])
+async def hello():
+    return {'fastapi':'hello'}

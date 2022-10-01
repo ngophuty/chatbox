@@ -4,7 +4,7 @@ from pydantic import BaseSettings
 
 class ENVIROMENT(BaseSettings):
     HOST : str
-    PORT : str
+    PORT : int
     RELOAD : str 
 
 
