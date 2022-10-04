@@ -4,7 +4,7 @@ from env import env
 
 router = APIRouter()
 
-# @router.get('/')
+
 
 @router.post('/webhook')
 async def recive_webhook(request: Request):
