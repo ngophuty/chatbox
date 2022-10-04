@@ -1,9 +1,7 @@
-from fastapi import FastAPI,APIRouter
-
+from fastapi import FastAPI
+from app.routes.routes import router
 
 
 app = FastAPI()
 
-@app.get('/',tags= ['hello world'])
-async def hello():
-    return {'fastapi':'hello'}
+app.include_router(router)
