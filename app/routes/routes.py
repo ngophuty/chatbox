@@ -13,5 +13,5 @@ async def recive_webhook(request: Request):
 @router.get('/webhook')
 async def get_webhook(request: Request):
     verify_token = env.VERIFY_TOKEN
-    return {'data':verify_token}
+    return {'dataaaaaaaaa':verify_token}
     # fb_token = request.query_params.get("hub.verify_token") 
