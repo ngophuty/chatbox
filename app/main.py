@@ -5,3 +5,9 @@ from app.routes.routes import router
 app = FastAPI()
 
 app.include_router(router)
+
+@app.get('/')
+async def hello():
+    return {
+        'message': 'xin chào'
+    }
