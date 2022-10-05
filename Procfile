@@ -1,1 +1,1 @@
-web: uvicorn app.main:app  --port=8000  --reload
+web: python run_app.py
