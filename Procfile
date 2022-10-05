@@ -1,1 +1,1 @@
-web: uvicorn app.main:app --host= localhost --port=8000
+web: uvicorn app.main:app --reload
