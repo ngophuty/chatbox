@@ -1,1 +1,1 @@
-web: uvicorn app.main:app --reload
+web: uvicorn app.main:app  --port =${PORT:-8000}  --reload
