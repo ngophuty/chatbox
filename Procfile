@@ -1,1 +1,1 @@
-web: uvicorn app.main:app  --port:env.PORT||8000  --reload
+web: uvicorn app.main:app  --port=env.PORT||8000  --reload
